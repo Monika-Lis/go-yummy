@@ -1,14 +1,13 @@
 import React from 'react';
-import { HomePage } from './pages/HomePage/Home';
-import { WelcomePage } from './pages/WelcomePage/Welcome';
-import { Footer } from './components/Footer/Footer';
 
+import Header from './components/Header/Header';
+import { BrowserRouter as Router } from 'react-router-dom';
 export const App = () => {
   return (
     <div>
-      <HomePage />
-      <WelcomePage />
-      <Footer />
+      <Router>
+        <Header />
+      </Router>
     </div>
   );
 };

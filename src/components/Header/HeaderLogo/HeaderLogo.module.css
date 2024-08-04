@@ -1,0 +1,22 @@
+.logoLink {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 187px;
+  transition: transform 0.3s ease;
+}
+
+.logoLink:hover .logo {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 44px;
+    height: 44px;
+  }
+}
