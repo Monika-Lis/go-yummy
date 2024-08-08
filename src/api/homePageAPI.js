@@ -1,5 +1,4 @@
        
- 
 import axios from 'axios';
 
 const BASE_URL = 'https://goit-so-yummy-gr5-f200f807d84e.herokuapp.com/';
