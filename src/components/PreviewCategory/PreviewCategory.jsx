@@ -2,8 +2,8 @@ import css from './PreviewCategory.module.css';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { fetchPopularCategories } from 'api/homePageAPI';
-import { PreviewCategoryCard } from 'components/PreviewCategoryCard/PreviewCateogryCard';
+import { fetchPopularCategories } from '../../redux/Operations/homePageAPI';
+import { PreviewCategoryCard } from '../PreviewCategoryCard/PreviewCateogryCard';
 
 export const PopularCategories = () => {
   const [popularCategories, setPopularCategories] = useState([]);
