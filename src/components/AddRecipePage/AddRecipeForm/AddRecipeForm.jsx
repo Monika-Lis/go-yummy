@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import { getAllCategories, getIngredients } from '.Operations';
-import { addOwnRecipe } from '.Operations';
+import { getAllCategories, getIngredients } from '../Extras/Operations/operation';
+import { addOwnRecipe } from '../Extras/Operations/operation';
 import { toast } from 'react-toastify';
-import { selectCategoryList, selectIngredients } from './selectors';
+import { selectCategoryList, selectIngredients } from '../../MyRecipesPage/Selectors/selectors';
 import { RecipeDescriptionFields } from './RecipeDescriptionFields/RecipeDescriptionFields';
 import { RecipePreparationFields } from './RecipePreparationFields/RecipePreparationFields';
 import { SubmitButton } from './AddRecipeForm.styled';
-import { RecipeIngredientsFields } from './RecipeIngredientsFields/RecipeIngredientFields';
+import { RecipeIngredientsFields } from './RecipeIngredientsFields/RecipeIngredientsFields';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 

@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import greenDotMobile from './ImagesRecipe/greenDot-mobile.svg';
-import blackDotMobile from './ImagesRecipe/blackDot-mobile.svg';
-import greenDotDesktop from '/ImagesRecipe//greenDot-desktop.svg';
-import blackDotDesktop from './ImagesRecipe/blackDot-desktop.svg';
+import greenDotMobile from '../ImagesRecipe/greenDot-mobile.svg';
+import blackDotMobile from '../ImagesRecipe/blackDot-mobile.svg';
+import greenDotDesktop from '../ImagesRecipe//greenDot-desktop.svg';
+import blackDotDesktop from '../ImagesRecipe/blackDot-desktop.svg';
 
-import spinachMobile1x from './ImagesRecipe/spinach-mobile@1x.png';
-import spinachMobile2x from './ImagesRecipe/pinach-mobile@2x.png';
-import spinachTablet1x from './ImagesRecipe/spinach-tablet@1x.png';
-import spinachTablet2x from './ImagesRecipe/spinach-tablet@2x.png';
-import spinachDesktop1x from './ImagesRecipe/spinach-desktop@1x.png';
-import spinachDesktop2x from './ImagesRecipe/spinach-desktop@2x.png';
+import spinachMobile1x from '../ImagesRecipe/spinach-mobile@1x.png';
+import spinachMobile2x from '../ImagesRecipe/spinach-mobile@2x.png';
+import spinachTablet1x from '../ImagesRecipe/spinach-tablet@1x.png';
+import spinachTablet2x from '../ImagesRecipe/spinach-tablet@2x.png';
+import spinachDesktop1x from '../ImagesRecipe/spinach-desktop@1x.png';
+import spinachDesktop2x from '../ImagesRecipe/spinach-desktop@2x.png';
 
 export const StyledDots = styled.div`
   position: absolute;

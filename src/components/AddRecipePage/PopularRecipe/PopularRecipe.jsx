@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import EllipsisText from 'react-ellipsis-text/lib/components/EllipsisText';
-import { getPopularRecipes } from './Operations';
-import { selectPopularRecipes } from './selectors';
+import { getPopularRecipes } from '../../AddRecipePage/Extras/Operations/operation';
+import { selectPopularRecipes } from '../../MyRecipesPage/Selectors/selectors';
 import { Description, Image, Link, PopularStyled, RecipeItem, RecipeTitle, RecipesList, Title } from './PopularRecipe.styled';
 import { useMediaQuery } from '@mui/material';
 

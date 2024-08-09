@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Controller } from 'react-hook-form';
-import { timeGenerator } from 'Extras/timeGenerator';
-import { onCapitalise } from 'Extras/onCapitalise';
+import { timeGenerator } from '../../Extras/timeGenerator';
+import { onCapitalise } from '../../Extras/OnCapitalise';
 import {
   ImageLabel,
   RecipeDescStyled,
@@ -9,7 +9,6 @@ import {
   StyledImg,
   InputHidden,
   DefaultImage,
-  IconClose,
   Error,
   Label,
   Input,
@@ -57,12 +56,12 @@ export const RecipeDescriptionFields = ({
           <ImageWrapper>
             <StyledImg src={preview} width="279" height="268" alt="recipe preview" />
             <RemoveFileBtn onClick={removeFileUpload}>
-              <IconClose />
+              <x />
             </RemoveFileBtn>
           </ImageWrapper>) :
           (<div width="279" height="268">
             <DefaultImage
-              src={camera}
+              src=''
               alt="set image"
               width="64"
               height="64"

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Select from 'react-select';
-import { ReactComponent as CloseIcon } from "../../../images/svg/x.svg";
+
 
 export const RecipeDescStyled = styled.div`
   display: flex;
@@ -97,7 +97,7 @@ export const RemoveFileBtn = styled.button`
   }
 `;
 
-export const IconClose = styled(CloseIcon)`
+export const IconClose = styled()`
   display: block;
   width: 20px;
   height: 20px;

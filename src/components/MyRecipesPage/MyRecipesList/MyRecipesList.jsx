@@ -2,15 +2,15 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import EllipsisText from "react-ellipsis-text";
-import { selectIsLoadingMyRecipes, selectMyRecipes, selectTotalPageRecipe } from "./selectors";
-import { deleteOwnRecipe, getAllOwnRecipes } from "./Operations";
-import timeConvert from "Extras/timeConverter";
+import { selectIsLoadingMyRecipes, selectMyRecipes, selectTotalPageRecipe } from "../Selectors/selectors";
+import { deleteOwnRecipe, getAllOwnRecipes } from "../../AddRecipePage/Extras/Operations/operation";
+import timeConvert from "../../AddRecipePage/Extras/timeConverter";
 import { Tooltip, useMediaQuery } from "@mui/material";
-import { Background } from ".Background/Background";
-import { Container } from "./Container/Container";
-import { MainPageTitle } from "./ManePageTitle/MainPageTitle";
-import { Pagination } from "./Paginator/Paginator";
-import { Description, Image, RecipesItem, RecipesList, Section, Wrapper, Time, Title, BottomWrapper, Link, DeleteButton, DeleteIcon, TemplatetWrapper } from "./MyRecipesList.styled";
+import { Background } from "../Background/Background";
+import { Container } from "../Container/Container";
+import { MainPageTitle } from "../MainPageTitle/MainPageTitle" ;
+import { Pagination } from "../Paginator/Paginator";
+import { Description, Image, RecipesItem, RecipesList, Section, Wrapper, Time, Title, BottomWrapper, Link, DeleteButton, TemplatetWrapper } from "./MyRecipesList.styled";
 
 
 
@@ -94,14 +94,14 @@ export const MyRecipesList = () => {
         <Container>
             <Section>
                 <MainPageTitle title='My recipes' />
-                {isLoading ? <ListSkeleton/> :!myRecipes || myRecipes.length === 0 ?
+                {isLoading ? <p/> :!myRecipes || myRecipes.length === 0 ?
                     <TemplatetWrapper>
-                        <NeedSearching text="First you need to add some recipe." />
+                        <p text="First you need to add some recipe." />
                     </TemplatetWrapper> :
                     <RecipesList>
                         {myRecipes?.map((recipe) => {
                             return <RecipesItem key={recipe._id}>
-                                <Image src={recipe.preview ? recipe.preview : defaultImage} alt={recipe.title} />
+                                <Image src={recipe.preview ? recipe.preview : ''} alt={recipe.title} />
                                 <Wrapper>
                                     <div>
                                         <Title>
@@ -120,7 +120,7 @@ export const MyRecipesList = () => {
                                 </Wrapper>
                                 <Tooltip title="Delete" placement="bottom-start">
                                     <DeleteButton id={recipe._id} onClick={() => onDelete(recipe._id)}>
-                                        <DeleteIcon/>
+                                        <p/>
                                     </DeleteButton>
                                 </Tooltip>
                             </RecipesItem>

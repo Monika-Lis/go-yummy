@@ -1,12 +1,12 @@
-import { MainPageTitle } from './MainPageTitle/MainPageTitle';
-import { Background } from './Background/Background';
-import { Container } from './Container/Container';
-import { Main } from './Main/Main';
-import { GoToTop } from '.ScrollUp/ScrollUp';
-import { FollowUs } from './FollowUs/FollowUs';
-import { PopularRecipe } from './PopularRecipe/PopularRecipe';
-import { AddRecipeForm } from './AddRecipeForm/AddRecipeForm';
-import { SecondaryWrapper, Section, WrapperStyled } from './AddRecipePage.styled';
+import { MainPageTitle } from '../../components/MyRecipesPage/MainPageTitle/MainPageTitle';
+import { Background } from '../../components/MyRecipesPage/Background/Background';
+import { Container } from '../../components/MyRecipesPage/Container/Container';
+import { Main } from '../../components/AddRecipePage/Main/Main';
+import { GoToTop } from '../../components/MyRecipesPage/ScrollUp/ScrollUp';
+import { FollowUs } from '../../components/AddRecipePage/FollowUs/FollowUs';
+import { PopularRecipe } from '../../components/AddRecipePage/PopularRecipe/PopularRecipe';
+import { AddRecipeForm } from '../../components/AddRecipePage/AddRecipeForm/AddRecipeForm';
+import { SecondaryWrapper, Section, WrapperStyled } from '../AddRecipesPage/AddRecipes.styled';
 import { useMediaQuery } from '@mui/material';
 
 export const AddRecipePage = () => {

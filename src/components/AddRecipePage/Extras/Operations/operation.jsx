@@ -1,4 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
+import axios from 'axios';
+const BASE_URL = 'https://goit-so-yummy-gr5-f200f807d84e.herokuapp.com/';
+
 
 export const RecipesAPI = {
   getPopularRecipes: async () => {
@@ -16,12 +19,25 @@ export const RecipesAPI = {
     return data;
   }
 };
+export const getAllOwnRecipes = createAsyncThunk(
+    "ownRecipes/getAll",
+    async (formData, thunkAPI) => {
+      try {
+        const response = await {BASE_URL}.getAllOwnRecipes(formData);
+  
+        return response;
+      } catch (error) {
+        return thunkAPI.rejectWithValue(error.message);
+      }
+    }
+  );
+
 
 export const getPopularRecipes = createAsyncThunk(
   'recipes/getPopular',
   async (_, thunkAPI) => {
     try {
-      const response = await RecipesAPI.getPopularRecipes();
+      const response = await {BASE_URL}.getPopularRecipes();
       return response;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -30,10 +46,10 @@ export const getPopularRecipes = createAsyncThunk(
 );
 
 export const addOwnRecipe = createAsyncThunk(
-    "ownRecipes/addOwnRecipe",
+    "",
   async (formData, thunkAPI) => {
       try {
-        const response = await OwnRecipesAPI.addOwnRecipe(formData);
+        const response = await { BASE_URL }.addOwnRecipe(formData);
         return response;
       } catch (error) {
         return thunkAPI.rejectWithValue(error.message);
@@ -44,7 +60,7 @@ export const getAllCategories = createAsyncThunk(
   'recipes/getAllCategories',
   async (_, thunkAPI) => {
     try {
-      const response = await RecipesAPI.getAllCategories();
+      const response = await {BASE_URL}.getAllCategories();
       return response;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -62,3 +78,14 @@ export const getIngredients = createAsyncThunk(
     }
 }
 )
+export const deleteOwnRecipe = createAsyncThunk(
+    "ownRecipes/deleteOwnRecipe",
+    async (id, thunkAPI) => {
+      try {
+        const response = await {BASE_URL}.deleteOwnRecipe(id);
+        return response;
+      } catch (error) {
+        return thunkAPI.rejectWithValue(error.message);
+      }
+    }
+);

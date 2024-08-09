@@ -1,4 +1,4 @@
-import { BasicPagination, ArrowBack, ArrowForward } from "./Paginator.styled"
+import { BasicPagination } from "./Paginator.styled"
 import { PaginationItem } from "@mui/material";
 import PropTypes from 'prop-types';
 
@@ -11,7 +11,7 @@ export const Pagination = ({ onChange, page, totalPages }) => {
         siblingCount={0}
         renderItem={(item) => (
             <PaginationItem
-                slots={{ previous: ArrowBack, next: ArrowForward }}
+                slots={{ previous: "", next: "" }}
                 {...item}
             />
         )}

@@ -22,7 +22,7 @@ import {
   StyledSelect,
   Title,
   Wrapper,
-} from './RecipeIngredientFields.styled';
+} from './RecipeIngredientsFields.styled';
 import PropTypes from 'prop-types';
 
 
@@ -85,7 +85,7 @@ export const RecipeIngredientsFields = ({
                 }}
               >
                 <Icon>
-                  <use href={`${SVG}#icon-decrement`} />
+                  <use href={`${''}#icon-decrement`} />
                 </Icon>
               </CountButton>
             </span>
@@ -102,7 +102,7 @@ export const RecipeIngredientsFields = ({
               }}
             >
               <Icon>
-                <use href={`${SVG}#icon-increment`}/>
+                <use href={`${'SVG'}#icon-increment`}/>
               </Icon>
             </CountButton>
           </Tooltip>
@@ -183,7 +183,7 @@ export const RecipeIngredientsFields = ({
                   }}
                 >
                   <DeleteIcon>
-                    <use href={`${SVG}#icon-x`} />
+                    <use href={`${"SVG"}#icon-x`} />
                   </DeleteIcon>
                 </DeleteButton>
               </Tooltip>
