@@ -3,17 +3,15 @@ import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import EllipsisText from "react-ellipsis-text";
 import { selectIsLoadingMyRecipes, selectMyRecipes, selectTotalPageRecipe } from "./selectors";
-import { deleteOwnRecipe, getAllOwnRecipes } from "redux/ownRecipes/ownRecipesOperations";
+import { deleteOwnRecipe, getAllOwnRecipes } from "./Operations";
 import timeConvert from "Extras/timeConverter";
 import { Tooltip, useMediaQuery } from "@mui/material";
-import { Background } from "reusableComponents/Background/Background";
-import { Container } from "reusableComponents/Container/Container";
+import { Background } from ".Background/Background";
+import { Container } from "./Container/Container";
 import { MainPageTitle } from "./ManePageTitle/MainPageTitle";
-import { Pagination } from "./Pagination/Pagination";
-import defaultImage from '../../images/commonImages/defaultImage@2x.png';
-import NeedSearching from "reusableComponents/NeedSearching/NeedSearching";
+import { Pagination } from "./Paginator/Paginator";
 import { Description, Image, RecipesItem, RecipesList, Section, Wrapper, Time, Title, BottomWrapper, Link, DeleteButton, DeleteIcon, TemplatetWrapper } from "./MyRecipesList.styled";
-import { ListSkeleton } from "components/Recipe/ListSkeleton";
+
 
 
 export const MyRecipesList = () => {
