@@ -11,8 +11,8 @@ import { Login } from './pages/Auth/Login/Login';
 import { NotFound } from './pages/NotFoundPage/NotFound';
 import css from './App.module.css'; 
 import CategoriesPage from './pages/CategoriesPage/Categories';
-import  MyRecipesPage  from './pages/MyRecipesPage/MyRecipes';
-import  AddRecipePage  from './pages/AddRecipesPage/AddRecipes';
+import { MyRecipesPage } from "./pages/MyRecipesPage/MyRecipes"; 
+import { AddRecipePage  } from './pages/AddRecipesPage/AddRecipes';
 
 
 export const App = () => {
@@ -65,6 +65,21 @@ export const App = () => {
                 </>
               }
             />
+            <Route
+              path="add"
+              element={
+                <>
+                  <AddRecipePage/>
+                </>
+              }
+            /> <Route
+              path="My"
+              element={
+                <>
+                  <MyRecipesPage />
+                </>
+              }
+            /> 
           </Routes>
         </div>
       </Router>

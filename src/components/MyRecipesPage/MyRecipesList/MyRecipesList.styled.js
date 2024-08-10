@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-
+import { default as TrashIcon } from '../ImagesRecipe/trash-01.svg';
 
 export const Section = styled.main`
     padding-top: 114px;
@@ -224,19 +224,19 @@ export const DeleteButton = styled.button`
     }
 `;
 
-// export const DeleteIcon = styled(TrashIcon)`
-//   width: 14px;
-//   height: 14px;
-//   display: block;
-//   margin: 0 auto;
+export const DeleteIcon = styled(TrashIcon)`
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin: 0 auto;
   
-//   @media screen and (min-width: 768px) {
-//     width: 22px;
-//     height: 22px;
-//   };
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 22px;
+  };
 
-//   @media screen and (min-width: 1280px) {
-//     width: 24px;
-//     height: 24px;
-//   }
-// `;
+  @media screen and (min-width: 1280px) {
+    width: 24px;
+    height: 24px;
+  }
+`;

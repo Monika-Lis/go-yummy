@@ -13,7 +13,6 @@ import { Pagination } from "../Paginator/Paginator";
 import { Description, Image, RecipesItem, RecipesList, Section, Wrapper, Time, Title, BottomWrapper, Link, DeleteButton, TemplatetWrapper } from "./MyRecipesList.styled";
 
 
-
 export const MyRecipesList = () => {
     const dispatch = useDispatch();
     const location = useLocation();

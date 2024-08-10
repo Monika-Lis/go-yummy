@@ -2,7 +2,7 @@ import { MyRecipesList } from '../../components/MyRecipesPage/MyRecipesList/MyRe
 import { GoToTop } from '../../components/MyRecipesPage/ScrollUp/ScrollUp';
 import { Main } from '../../components/AddRecipePage/Main/Main';
 
-const MyRecipesPage = () => {
+export const MyRecipesPage = () => {
   return (
     <Main>
       <MyRecipesList />
@@ -11,4 +11,3 @@ const MyRecipesPage = () => {
   );
 };
 
-export default MyRecipesPage;
