@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import css from './RecipeInfo.module.css';
 
 const RecipeInfo = ({ title, description, time, recipeId }) => {
+  // const { title, description, time } = recipe;
+
   const [favorites, setFavorites] = useState([]);
 
   const isFavorite = favorites.includes(recipeId);

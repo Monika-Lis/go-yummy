@@ -15,19 +15,35 @@ const Recipe = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const token = localStorage.getItem('token');
+
+  // useEffect(() => {
+  //   const fetchRecipe = async () => {
+  //     setIsLoading(true);
+  //     try {
+  //       const data = await getRecipeById(recipeId);
+  //       setRecipe(data);
+  //     } catch (error) {
+  //       setError(error);
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   };
+  //   fetchRecipe();
+  // }, [recipeId]);
+
   useEffect(() => {
     const fetchRecipe = async () => {
       setIsLoading(true);
       try {
-        const data = await getRecipeById(recipeId);
-        setRecipe(data);
+        const response = await getRecipeById(token, recipeId);
+        setRecipe(response.data[0]);
       } catch (error) {
         setError(error);
       } finally {
         setIsLoading(false);
       }
     };
-
     fetchRecipe();
   }, [recipeId]);
 
