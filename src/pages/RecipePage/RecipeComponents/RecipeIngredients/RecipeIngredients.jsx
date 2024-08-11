@@ -8,14 +8,6 @@
 import css from './RecipeIngredients.module.css';
 
 const RecipeIngredients = ({ ingredients }) => {
-  // const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   dispatch(getShoppingList());
-  // }, [dispatch]);
-
-  // const shoppingList = useSelector(selectShoppingList);
-
   return (
     <section className={css.recipeIngredients}>
       <div className={css.listHeader}>

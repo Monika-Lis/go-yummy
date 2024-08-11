@@ -19,8 +19,8 @@ const Recipe = () => {
     const fetchRecipe = async () => {
       setIsLoading(true);
       try {
-        const data = await getRecipeById(recipeId); // Popraw to na wywołanie API
-        setRecipe(data); // Ustaw wynik na `recipe`
+        const data = await getRecipeById(recipeId);
+        setRecipe(data);
       } catch (error) {
         setError(error);
       } finally {
