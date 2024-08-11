@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/go-yummy/static/css/main.1cef66a2.css",
-    "main.js": "/go-yummy/static/js/main.9a7a8b77.js",
+    "main.css": "/go-yummy/static/css/main.7be572e4.css",
+    "main.js": "/go-yummy/static/js/main.5b119434.js",
     "static/media/welcome-bg-desktop@x2.png": "/go-yummy/static/media/welcome-bg-desktop@x2.ef7204e596f0e127e0f8.png",
     "static/media/welcome-bg-tablet@x2.png": "/go-yummy/static/media/welcome-bg-tablet@x2.5e6463a1ccaf83375f7b.png",
     "static/media/assortment-vegetables-desktop@x2.png": "/go-yummy/static/media/assortment-vegetables-desktop@x2.55c9dba5ef4c9bdd622a.png",
@@ -56,11 +56,11 @@
     "static/media/arrowRight.svg": "/go-yummy/static/media/arrowRight.828da05f548f4ad2c5e6cdb3379e45aa.svg",
     "static/media/hamburger.svg": "/go-yummy/static/media/hamburger.99954b2cb14dc7a13c5ef2896bf6c275.svg",
     "static/media/plusIcon.svg": "/go-yummy/static/media/plusIcon.014b990a06f79c96e98a9b726649bbac.svg",
-    "main.1cef66a2.css.map": "/go-yummy/static/css/main.1cef66a2.css.map",
-    "main.9a7a8b77.js.map": "/go-yummy/static/js/main.9a7a8b77.js.map"
+    "main.7be572e4.css.map": "/go-yummy/static/css/main.7be572e4.css.map",
+    "main.5b119434.js.map": "/go-yummy/static/js/main.5b119434.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cef66a2.css",
-    "static/js/main.9a7a8b77.js"
+    "static/css/main.7be572e4.css",
+    "static/js/main.5b119434.js"
   ]
 }
